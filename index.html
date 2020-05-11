@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="./Assets/images/ci-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Assets/styles.css">
+  <title>CrypIt</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper z-depth-3"><img src="./Assets/images/ci-logo.png" class="sitelogo"></div>
+  </nav>
+  <div class="container">
+    <div class="row col s12 m5 l4">
+      <div class="col s12 m7 l8 ">
+        <h2 class="title-text">Search &amp; Select</h2>
+        <div class="row">
+          <div class="input-field col s12 bordered">
+            <div>
+              <label>Cryptocurrency:</label>
+              <select id="cryptoSelector" class="browser-default border-width"></select>
+            </div>
+            <div class="mini-margin">
+              <label for="first_name" class="active">Search Stocks</label>
+              <input placeholder="Stock Name" id="searchBox" type="text" class="validate border-width">
+            </div>
+            <div>
+              <button id="makeApiCall" class="btn btn-primary waves-effect waves-light btn">Search</button>
+            </div>
+            <div id="stockCard"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m5 l4">
+        <h2 class="title-text">Watchlist</h2>
+        <div id="watchlist">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot footer-copyright center-align">
+    <div class="container love">
+      Made with the blood, sweat, tears & a whole lotta ❤️. Created by: Guido Asbun, Jordan Scheftic, Julian Van Ost,
+      and Bryan Yang
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./Assets/scripts.js"></script>
+
+</html>
